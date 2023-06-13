@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sanghee</title>
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+       }
+       #wrap {
+        width:1000px;
+        margin: 0 auto;
+        padding:20px;
+       }
+       header {
+        box-sizing: border-box;
+        height: 200px;
+       }
+       header p {
+        padding: 3px 0px 3px 0px;
+       }
+       #img {
+        width: 200px;
+        height: 150px;
+        border-radius: 30%;
+       }
+       aside {
+        width: 350px;
+        height: 500px;
+        float: left;
+       }
+       #img2{
+        float: right;
+        height:250px;
+        padding-top: 10px;
+       }
+       #aside1 {
+        height: 300px;
+       }
+       .aside2 {
+        height: 150px;
+       }
+       section {
+        width: 600px;
+        height: 500px;
+        float: right;
+       }
+       footer {
+        clear: both;
+        width: 1000px;
+        height:100px;
+       }
+       #body {
+        padding-top: 20px;
+       }
+       li {
+        display: inline;
+       }
+       .border {
+        border-bottom: solid 1px grey;
+       }
+       td {
+        padding: 3px 3px 3px 0px;
+       }
+       aside p, section p, footer ul {
+        padding-top: 10px;
+       }
+       .bold {
+        font-weight: bold;
+       }
+       footer img {
+        width: 30px;
+        height: 30px;
+       }
+       header table {
+        float: left;
+       }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>MyPage</h2>
+        <div id="body">
+        <header>
+            <table>
+                <tr>
+                    <td class="bold">이름</td>
+                    <td>|</td>
+                    <td class="bold">김상희</td>
+                </tr>
+                <tr>
+                    <td class="bold">생년월일</td>
+                    <td>|</td>
+                    <td class="bold">1996.05.30</td>
+                </tr>
+                <tr>
+                    <td>별명</td>
+                    <td>|</td>
+                    <td>삐약이</td>
+                </tr>
+                <tr>
+                    <td>MBTI</td>
+                    <td>|</td>
+                    <td>ISFP</td>
+                </tr>
+                <tr>
+                    <td colspan="3">웹 개발자가 되기 위해 열심히 공부중입니다!</td>
+                </tr>
+                </table>
+                <img id="img" src="/css/img/병아리.png">
+        </header>
+        <aside>
+            <div id="aside1">
+            <h3 class="border">취미</h3>
+            <img id="img2"src="/css/img/나.jpg">
+            <p>맛집 탐방</p>
+            <p>독서</p>
+            <p>게임하기</p>
+            </div>
+            <h3 class="border">특기</h3>
+            <p>아재개그 하기</p>
+            <p>잘 웃기</p>
+            <p>이름 외우기</p>
+        </aside>
+        <section>
+            <div class="aside2">
+            <h3 class="border">교육</h3>
+            <p>구트아카데미 자바학원 (2023.05.30 ~ ing)</p>
+            <p>세명대학교 임상병리학과 졸업 (비전공자)</p>
+            </div>
+            <div class="aside2">
+            <h3 class="border">스킬</h3>
+            <p>Git</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            </div>
+            <h3 class="border">앞으로 배울 것</h3>
+            <p>DBMS / SQL</p>
+            <p>JAVA / Servlet</p>
+            <p>JSP / DBCP</p>
+            <p>Spring / REST API</p>
+            <p>React JS</p>
+            <p>React Nativ</p>
+        </section>
+        <footer>
+            <h3 class="border">링크</h3>
+            <ul>
+                <li><img src="/css/img/instagram-logo-11.png"></li>
+                <li><img src="/css/img/티스토리-2.png"></li>
+            </ul>
+        </footer>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  body 태그를 포함한 모든 태그 선택 : 전체 선택자*/
+        *{
+            color: rgb(29, 122, 29);
+            margin: 0;
+            padding: 0;
+        } 
+        body {
+            border: solid 2px blue;
+        } 
+        /* 태그 선택자 */
+        h3 {
+            border: solid 2px red;
+            margin: 10px;
+            padding: 10px;
+        }
+        /* 그룹 선택자 ,,,, */
+        h3, p {
+            color: red;
+        }
+        /* 아이디 선택자 */
+        #id1, #id2 {
+            color: rgb(59, 215, 199);
+        }
+         
+        
+        ul {
+            background-color: rgb(40, 175, 40);
+        }
+          
+        li {
+            background-color: rgb(222, 95, 222);
+        }
+        /* 클래스 선택자 */
+        .c1 {
+            background-color: blue;
+        }
+        
+         
+    </style>
+  
+</head>
+<body>
+    <h3 id="id1">요리의 사전적 의미</h3>
+    <p>1. 여러 조리 과정을 거쳐 음식을 만듦. 2. 어떤대상을 능숙하게 처리함을 속되게 이르는 말.</p>
+    <h3 id="id2">요리의 사전적 의미</h3>
+    <!-- 한 페이지에서 똑같은 아이디 x 똑같은 클래스는 (같은 스타일이면 되도록 묶자) o -->
+
+    <h2>자바</h2>
+    <ul>
+        <li class="c1">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <ul>
+        <li class="c1">4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <ol>
+        <li class="c1">7</li>
+        <li>8</li>
+        <li>9</li>
+    </ol>
+</body>
+</html>

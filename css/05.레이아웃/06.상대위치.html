@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06.상대위치</title>
+    <style>
+        * {
+            margin:0;
+        }
+        #a, #b, #c {
+            width: 100px;
+            height: 60px;
+            background-color: yellow;
+            border: solid 1px black;
+        }
+        #b{
+            position: relative;
+            /* 배치됐던 기준점으로부터 */
+            top: 30px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="a">요소 A</div>
+    <div id="b">요소 B</div>
+    <div id="c">요소 C</div>
+</body>
+</html>

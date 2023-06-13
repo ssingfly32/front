@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+nav{
+    position: relative;
+    display: flex;
+}
+nav a{
+    position: relative;
+    margin: 0 20px;
+    font-size:2em;
+    color:#000000;
+    text-decoration: none;
+}
+nav #underline{
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: #000000;
+    bottom: -9px;
+    transition: 0.2s;
+    border-radius: 5px;
+
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div id="underline"></div>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+        <a href="#">menu5</a>
+        <a href="#">menu6</a>
+    </nav>
+    <script type="text/javascript">
+            var underline = document.querySelector('#underline');
+            var item = document.querySelectorAll('nav a');
+            function select(event){
+                // console.log(event);
+                underline.style.left = event.offsetLeft+"px";
+                underline.style.width = event.offsetWidth+"px";
+                // console.log(e.offsetLeft+"px");
+               
+            }
+            item.forEach(link =>{
+                link.addEventListener('click', (event)=>{
+                    select(event.target);
+                })
+            })
+    </script>
+</body>
+</html>

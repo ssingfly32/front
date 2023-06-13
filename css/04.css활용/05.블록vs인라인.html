@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.블록vs인라인</title>
+    <style>
+        /* 블록태그(div, p, ul, ol, hr.....) (자동줄바꿈) */
+        /* 인라인태그(span, img, a, input) */
+        *{
+            margin:0;
+            padding:0;
+        }
+        span{
+            border: solid 1px black;
+            background-color: yellow;
+        }
+        #a {
+            /* 너비,높이,마진 */
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        #b {
+            /* 줄바꿈하고 속성입히기 */
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        #c {
+            /* 줄바꿈없이 속성입히기 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h3>인라인과 블록</h3>
+    <p>
+        글자1 <span id="a"> 요소 A</span>
+        글자2 <span id="b"> 요소 B</span>
+        글자3 <span id="c"> 요소 C</span>
+        글자4
+
+    </p>
+</body>
+</html>

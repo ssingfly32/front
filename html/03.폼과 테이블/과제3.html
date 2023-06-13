@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>회원 가입</h2>
+    <form action="register" method="post">
+        <table >
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="id" autofocus></td>
+            </tr>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td>비밀번호 확인</td>
+                <td><input type="password" name="repeatpw"></td>
+            </tr>
+            <tr>
+                <td>전화번호</td>
+                <td><input type="text" name="tel" placeholder="010-123-4567"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="text" name="address">@
+                    <select>
+                        <option>직접입력</option>
+                        <option>naver.com</option>
+                        <option>gmail.com</option>
+                        <option>daum.net</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>문자수신 여부</td>
+                <td><input type="radio" name="email" checked> 예
+                    <input type="radio" name="email"> 아니오
+                </td>
+            </tr>
+            <tr>
+                <td>가입 경로</td>
+                <td><input type="checkbox" name="item1">친구 소개
+                    <input type="checkbox" name="item2">인터넷 검색
+                    <input type="checkbox" name="item3">블로그
+                    <input type="checkbox" name="item4">기타
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
